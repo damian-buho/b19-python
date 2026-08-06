@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+libbz2-dev                               # high-quality block-sorting file compressor library - development
+libdb-dev                                # Berkeley Database Libraries [development]
+libexpat1-dev                            # XML parsing C library - development kit
+libffi-dev                               # Foreign Function Interface library (development files)
+libgdbm-compat-dev                       # GNU dbm database routines (legacy support development files) 
+libgdbm-dev                              # GNU dbm database routines (development files) 
+liblzma-dev                              # XZ-format compression library - development files
+libncurses-dev                           # developer's libraries for ncurses
+libnss3-dev                              # Development files for the Network Security Service libraries
+libreadline-dev                          # GNU readline and history libraries, development files
+libsqlite3-dev                           # SQLite 3 development files
+libssl-dev                               # Secure Sockets Layer toolkit - development files
+tk-dev                                   # Toolkit for Tcl and X11 (default version) - development files
+uuid-dev                                 # Universally Unique ID library - headers and static libraries
+zlib1g-dev                               # compression library - development

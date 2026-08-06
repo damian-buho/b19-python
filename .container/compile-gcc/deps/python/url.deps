@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+https://www.python.org/ftp/python/${M6E_UPSTREAM_VERSION}/Python-${M6E_UPSTREAM_VERSION}.tar.xz

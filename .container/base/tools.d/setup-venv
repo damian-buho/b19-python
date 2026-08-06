@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+  # shellcheck source=/dev/null
+  . b19-i18n
+
+  b19-run "PYTHON" "$(_ "Create venv")" --  \
+    python3 -m venv "${1}"
+
+  b19-run "PYTHON" "$(_ "Set activate as executable")" --  \
+    chmod +x "${1}/bin/activate"

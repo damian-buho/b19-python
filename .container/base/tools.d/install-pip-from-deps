@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+  # shellcheck source=/dev/null
+  . b19-i18n
+
+  # shellcheck source=/dev/null
+  source "${VIRTUAL_ENV}/bin/activate"
+
+  DEPSLIST="/deps/pip.deps"
+  # Install PIP dependencies from {STAGE}/pip.deps
+  if [[ -f "${DEPSLIST}" ]]; then
+
+    b19-log good "PIP" "$(_ "PIP Dependencies list is detected")"
+
+    # Ensure newline in the end
+    [[ $(tail -n 1 "${DEPSLIST}") != "" ]] && echo "" >> "${DEPSLIST}"
+
+    b19-run "PIP" "$(_ "Install dependencies from") ${DEPSLIST}" --   \
+      xargs pip install < <(decomment < "${DEPSLIST}")
+
+    b19-run "PIP" "$(_ "Remove") ${DEPSLIST}" --  \
+      rm "${DEPSLIST}" # We don't need inheritance here
+  else
+    b19-log warn "PIP" "$(_ "PIP Dependencies list is not detected")"
+  fi
+  # We WON'T clean cache to save BuildKit optimizations

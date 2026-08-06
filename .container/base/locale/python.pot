@@ -1,0 +1,68 @@
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+#
+# SPDX-License-Identifier: MIT
+msgid ""
+msgstr ""
+"Project-Id-Version: python development\n"
+"Report-Msgid-Bugs-To: i18n@b19.dev\n"
+"POT-Creation-Date: 2026-05-02 16:15-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .container/user/build.d/user/post/500-uv-sync.i.sh:5
+msgid "Sync dependencies"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:5
+msgid "Configure"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:15
+msgid "Build"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:18
+msgid "Install"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:21
+msgid "Cleanup .a"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:24
+msgid "Cleanup .o"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/100-download-source.sh:12
+msgid "Extract %s"
+msgstr ""
+
+#: .container/base/tools.d/setup-venv:6
+msgid "Create venv"
+msgstr ""
+
+#: .container/base/tools.d/setup-venv:9
+msgid "Set activate as executable"
+msgstr ""
+
+#: .container/base/tools.d/install-pip-from-deps:15
+msgid "PIP Dependencies list is detected"
+msgstr ""
+
+#: .container/base/tools.d/install-pip-from-deps:20
+msgid "Install dependencies from"
+msgstr ""
+
+#: .container/base/tools.d/install-pip-from-deps:23
+msgid "Remove"
+msgstr ""
+
+#: .container/base/tools.d/install-pip-from-deps:26
+msgid "PIP Dependencies list is not detected"
+msgstr ""
