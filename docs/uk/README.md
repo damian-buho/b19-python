@@ -4,13 +4,13 @@ SPDX-License-Identifier: MIT
 pf-cli-managed: yes
 -->
 
-<!-- textlint-disable terminology -->
+<!-- textlint-disable terminology,common-misspellings -->
 
 [English](../../README.md) · [Español](../es/README.md)
 
 # B19/Python
 
-CPython runtime compiled with PGO and LTO
+Дистрибуція CPython з підтримкою спільноти на основі B19/Ubuntu
 
 [![Stand with Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://damian-buho.github.io/support-ukraine/) [![License](https://img.shields.io/static/v1?label=license&message=MIT&color=4c1&style=flat-square)](LICENSE) ![Commit style](https://img.shields.io/static/v1?label=commits&message=conventional&color=blue&style=flat-square) ![Workflow](https://img.shields.io/static/v1?label=workflow&message=git-flow&color=blue&style=flat-square) ![Versioning](https://img.shields.io/static/v1?label=versioning&message=semantic&color=blue&style=flat-square) [![PRs welcome](https://img.shields.io/static/v1?label=PRs&message=welcome&color=4c1&style=flat-square)](CONTRIBUTING.md) [![Citation](https://img.shields.io/static/v1?label=citation&message=cff&color=blue&style=flat-square)](CITATION.cff) [![REUSE compliance](https://api.reuse.software/badge/codeberg.org/b19/python)](https://api.reuse.software/info/codeberg.org/b19/python)
 
@@ -20,8 +20,8 @@ CPython runtime compiled with PGO and LTO
 
 ## Можливості
 
-- CPython compiled from source with PGO and LTO
-- Pre-activated venv with uv integration
+- CPython, зібраний із початкового коду з PGO і LTO
+- Наперед активований venv з інтеграцією uv
 - Persistent APT cache across builds
 - Service process management with log routing (b19-exec)
 - Cached artifact downloads with integrity verification (b19-fetch)
@@ -50,7 +50,7 @@ CPython runtime compiled with PGO and LTO
 - Pre-installed utility tools
 - XDG Base Directory paths
 
-Див. [FEATURES.md](../../FEATURES.md), щоб переглянути повний перелік.
+Див. [FEATURES.md](FEATURES.md), щоб переглянути повний перелік.
 
 ## Що надає цей проєкт
 
@@ -136,13 +136,19 @@ FROM docker.io/damianbuho/b19-python-3.14:latest
 
 ## Посилання
 
+### Проєкт
+
 - [Специфікація Projectfile](https://projectfile.org)
-- [B19/Python on Codeberg](https://codeberg.org/b19/python)
-- [B19/Python on GitHub](https://github.com/damian-buho/b19-python)
-- [B19/Python on kiota.ch](https://kiota.ch/b19/python)
-- [Issues on Codeberg](https://codeberg.org/b19/python/issues)
-- [Issues on GitHub](https://github.com/damian-buho/b19-python/issues)
+- [B19/Python на Codeberg](https://codeberg.org/b19/python)
+- [B19/Python на GitHub](https://github.com/damian-buho/b19-python)
+- [B19/Python на kiota.ch](https://kiota.ch/b19/python)
+- [Issues на Codeberg](https://codeberg.org/b19/python/issues)
+- [Issues на GitHub](https://github.com/damian-buho/b19-python/issues)
 - [Packages on PyPI](https://pypi.org/project/python/)
+
+### Інше
+
+- [Від автора](https://dbuho.me)
 
 ## Ліцензія
 
