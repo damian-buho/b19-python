@@ -4,6 +4,8 @@ SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
 SPDX-License-Identifier: MIT
 -->
 
+<!-- textlint-disable terminology,common-misspellings -->
+
 # CPython, зібраний із початкового коду з PGO і LTO
 
 - CPython збирається з початкового коду upstream інструментальним ланцюжком `b19/gcc`, а не встановлюється з пакетів дистрибутива.
@@ -13,3 +15,5 @@ SPDX-License-Identifier: MIT
 - Збирається для amd64 і arm64.
 - `./configure` передаються голі імена компіляторів (`CC=gcc CXX=g++`), щоб `_sysconfigdata` записав саме їх, а не абсолютний шлях обгортки compile-cache з `b19/gcc`. Без цього CPython 3.14 (upstream [#151547](https://github.com/python/cpython/issues/151547)) зберігає `/usr/local/lib/compile-cache/g++`, якого немає в чистому робочому образі, і це ламає збирання похідних C++-розширень (PyICU, lxml sdist тощо).
 - Також слугує джерелом Python для builder-етапів `b19/node` і `b19/haskell` — видобуваються лише бінарники `python3*` і стандартна бібліотека, а не весь образ.
+
+<!-- textlint-enable -->
