@@ -74,5 +74,4 @@ B19/Python наразі не має програми винагород за в�
 | GHSA-5rjg-fvgr-3xxf | vendored in pip wheel, blocked by upstream |
 | GHSA-6v7p-g79w-8964 | vendored in pip wheel, blocked by upstream |
 
-*Згенеровано з projectfile ([дізнатися як](https://projectfile.org/how-to/security))*
 <!-- textlint-enable -->

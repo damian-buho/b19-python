@@ -76,5 +76,4 @@ aplica a este proyecto):
 | GHSA-5rjg-fvgr-3xxf | vendored in pip wheel, blocked by upstream |
 | GHSA-6v7p-g79w-8964 | vendored in pip wheel, blocked by upstream |
 
-*Generado desde projectfile ([saber cómo](https://projectfile.org/how-to/security))*
 <!-- textlint-enable -->

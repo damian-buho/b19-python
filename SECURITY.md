@@ -72,5 +72,3 @@ depends on an upstream release, or the advisory does not apply to this project):
 | CVE-2025-47273 | vendored in pip wheel, blocked by upstream |
 | GHSA-5rjg-fvgr-3xxf | vendored in pip wheel, blocked by upstream |
 | GHSA-6v7p-g79w-8964 | vendored in pip wheel, blocked by upstream |
-
-*Generated from projectfile ([learn how](https://projectfile.org/how-to/security))*
