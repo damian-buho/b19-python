@@ -61,14 +61,3 @@ gpg --encrypt --armor --recipient B64C122EE16C3746 message.txt
 
 B19/Python does not currently run a bug bounty programme. We still welcome
 responsibly disclosed reports — see the contact channel above.
-
-## Acknowledged Vulnerabilities
-
-The following findings were reviewed and are intentionally suppressed (a fix
-depends on an upstream release, or the advisory does not apply to this project):
-
-| ID | Reason |
-| --- | --- |
-| CVE-2025-47273 | vendored in pip wheel, blocked by upstream |
-| GHSA-5rjg-fvgr-3xxf | vendored in pip wheel, blocked by upstream |
-| GHSA-6v7p-g79w-8964 | vendored in pip wheel, blocked by upstream |

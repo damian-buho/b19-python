@@ -63,17 +63,4 @@ gpg --encrypt --armor --recipient B64C122EE16C3746 message.txt
 B19/Python no ofrece actualmente un programa de recompensas. Aun así
 agradecemos los informes divulgados de forma responsable — consulta el canal de
 contacto anterior.
-
-## Vulnerabilidades reconocidas
-
-Los siguientes hallazgos fueron revisados y se suprimen de forma intencionada
-(la corrección depende de una versión posterior del proyecto base o el aviso no
-aplica a este proyecto):
-
-| ID | Motivo |
-| --- | --- |
-| CVE-2025-47273 | vendored in pip wheel, blocked by upstream |
-| GHSA-5rjg-fvgr-3xxf | vendored in pip wheel, blocked by upstream |
-| GHSA-6v7p-g79w-8964 | vendored in pip wheel, blocked by upstream |
-
 <!-- textlint-enable -->
