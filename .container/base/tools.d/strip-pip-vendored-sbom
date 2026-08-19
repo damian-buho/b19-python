@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+set -euo pipefail
+
+# shellcheck source=/dev/null
+. b19-i18n
+
+# pip ships a CycloneDX SBOM of its frozen vendored tree (pip/_vendor/bom.cdx.json).
+# Vulnerability scanners ingest it and flag vendored msgpack/setuptools as installed
+# packages — unpatchable short of a pip release, and inherited by every downstream
+# image that copies this interpreter. Strip it so scanners assess real installable
+# packages only; drop this when pip vendors a fixed msgpack.
+for root in "$@"; do
+  while IFS= read -r bom; do
+    rm -f "${bom}"
+    b19-log good "PIP" "$(_p 'Stripped pip vendored SBOM: %s' "${bom}")"
+  done < <(fd --hidden --type f "bom\.cdx\.json" "${root}" 2>/dev/null)
+done

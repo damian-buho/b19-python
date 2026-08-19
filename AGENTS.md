@@ -20,7 +20,7 @@ CPython compiled from source with PGO and LTO.
 
 ## ENV
 
-- `VIRTUAL_ENV="${B19_HOME}"` (venv IS the home dir — not a subdirectory)
+- `VIRTUAL_ENV="${B19_HOME}/.venv"` (venv is a subdirectory of the home dir)
 - `UV_PYTHON="/usr/local/bin/python"` (points to compiled Python, not venv python)
 - `UV_PYTHON_DOWNLOADS=never`
 - `UV_COMPILE_BYTECODE=1`
@@ -34,3 +34,7 @@ CPython compiled from source with PGO and LTO.
 ## Note
 
 Also used as Python source in `b19/node` and `b19/haskell` builder stages — only `python3*` binaries and stdlib are COPY’d, not the full image.
+
+## Scanner visibility
+
+pip ships a CycloneDX SBOM of its vendored tree (`pip/_vendor/bom.cdx.json`); scanners ingest it and flag vendored msgpack/setuptools as installed packages. `600-strip-pip-sbom.i.sh` removes it from every pip copy in the final image so downstream consumers don’t inherit the findings. Drop that script when pip vendors a fixed msgpack.
