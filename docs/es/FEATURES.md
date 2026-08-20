@@ -29,7 +29,7 @@ SPDX-License-Identifier: MIT
 - Se admiten dependencias pip declarativas mediante simples archivos de texto `pip.deps`.
 - pip y setuptools están fijados a versiones concretas, no a lo que traiga el release de Python.
 
-## Heredado de B19/Ubuntu 1.4.1
+## Heredado de B19/Ubuntu
 
 ### Caché APT persistente entre compilaciones
 
@@ -96,7 +96,7 @@ SPDX-License-Identifier: MIT
 ### Conmutadores de funcionalidades para todos los subsistemas
 
 - Cada subsistema mayor (entrypoint, healthchecks, bootstrap, tests, secrets, validación de puertos, i18n, shell hooks) puede desactivarse en runtime mediante variables de entorno.
-- Los hooks individuales del entrypoint y del bootstrap pueden omitirse por nombre sin desactivar el subsistema entero.
+- Los hooks individuales del entrypoint, del bootstrap y de las comprobaciones de salud pueden omitirse por nombre sin desactivar el subsistema entero.
 - No hace falta reconstruir la imagen: los conmutadores son solo de runtime.
 
 ### Monitorización de estado integrada (healthcheck.d)

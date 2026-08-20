@@ -21,7 +21,7 @@ Community-maintained distribution of CPython based on B19/Ubuntu
 - CPython compiled from source with PGO and LTO
 - Pre-activated venv with uv integration
 
-### Inherited from B19/Ubuntu 1.4.1
+### Inherited from B19/Ubuntu
 
 - Persistent APT cache across builds
 - Service process management with log routing (b19-exec)
