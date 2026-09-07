@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: MIT
 msgid ""
 msgstr ""
-"Project-Id-Version: python 1.0.0-4-g14b5215\n"
+"Project-Id-Version: python 1.1.8\n"
 "Report-Msgid-Bugs-To: https://codeberg.org/b19/python/issues\n"
-"POT-Creation-Date: 2026-08-07 22:09+0000\n"
+"POT-Creation-Date: 2026-09-07 03:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,10 @@ msgstr ""
 
 #: .container/base/tools.d/setup-venv:13
 msgid "Set activate as executable"
+msgstr ""
+
+#: .container/base/tools.d/strip-pip-vendored-sbom:20
+msgid "Stripped pip vendored SBOM: %s"
 msgstr ""
 
 #: .container/compile-gcc/build.d/compile-gcc/post/100-download-source.sh:16
