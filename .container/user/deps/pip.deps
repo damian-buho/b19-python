@@ -4,5 +4,5 @@
 
 pip==26.2.1                             # The PyPA recommended tool for installing Python packages.
 setuptools==84.0.0                      # Easily download, build, install, upgrade, and uninstall Python packages
-uv==0.12.10                              # An extremely fast Python package and project manager, written in Rust.
+uv==0.12.11                              # An extremely fast Python package and project manager, written in Rust.
 wheel==0.48.0                           # Command line tool for manipulating wheel files
