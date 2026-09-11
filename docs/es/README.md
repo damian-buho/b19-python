@@ -55,68 +55,15 @@ Distribución de CPython mantenida por la comunidad, basada en B19/Ubuntu
 
 Consulta [FEATURES.md](FEATURES.md) para ver la lista completa.
 
-## Qué entrega este proyecto
-
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python-3.12:latest`
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python-3.13:latest`
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python-3.14:latest`
-- **Imagen de contenedor** `docker.io/damianbuho/b19-python-3.12:latest`
-- **Imagen de contenedor** `docker.io/damianbuho/b19-python-3.13:latest`
-- **Imagen de contenedor** `docker.io/damianbuho/b19-python-3.14:latest`
-
 ## Instalación
 
-Descarga la imagen de contenedor publicada:
-
-### Descargar de GHCR
-
-```sh
-docker pull ghcr.io/damian-buho/b19/python-3.12:latest
-docker pull ghcr.io/damian-buho/b19/python-3.13:latest
-docker pull ghcr.io/damian-buho/b19/python-3.14:latest
-```
-
-### Descargar de DockerHub
-
-```sh
-docker pull docker.io/damianbuho/b19-python-3.12:latest
-docker pull docker.io/damianbuho/b19-python-3.13:latest
-docker pull docker.io/damianbuho/b19-python-3.14:latest
-```
-
-Las versiones estables también publican las etiquetas `X.Y.Z`, `X.Y` y `X`: descarga el nivel de precisión que quieras fijar.
-
 Si los registros anteriores no están disponibles, descarga desde el origen:
-
-### Descargar de Kiota
 
 ```sh
 docker pull kiota.ch/b19/python-3.12:latest
 docker pull kiota.ch/b19/python-3.13:latest
 docker pull kiota.ch/b19/python-3.14:latest
 ```
-
-## Uso
-
-Construye sobre esta imagen:
-
-### Desde GHCR
-
-```dockerfile
-FROM ghcr.io/damian-buho/b19/python-3.12:latest
-FROM ghcr.io/damian-buho/b19/python-3.13:latest
-FROM ghcr.io/damian-buho/b19/python-3.14:latest
-```
-
-### Desde DockerHub
-
-```dockerfile
-FROM docker.io/damianbuho/b19-python-3.12:latest
-FROM docker.io/damianbuho/b19-python-3.13:latest
-FROM docker.io/damianbuho/b19-python-3.14:latest
-```
-
-Para el patrón multietapa recomendado y el sistema de hooks de compilación (build.d), genera un derivado con `b19/scripts/scaffold.sh` de [m6e/b19](https://kiota.ch/m6e/b19).
 
 ## Compilación
 
