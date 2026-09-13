@@ -9,7 +9,7 @@
 cff-version: 1.2.0
 message: Please cite this software using the metadata from this file.
 type: software
-title: B19/Python
+title: B19 / Python
 abstract: Community-maintained distribution of CPython based on B19/Ubuntu
 authors:
   - family-names: Búho
@@ -31,3 +31,4 @@ keywords:
   - language
   - runtime
   - docker
+version: 1.1.10

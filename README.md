@@ -6,7 +6,7 @@ pf-cli-managed: yes
 
 [Español](docs/es/README.md) · [Українська](docs/uk/README.md)
 
-# B19/Python
+# B19 / Python
 
 Community-maintained distribution of CPython based on B19/Ubuntu
 

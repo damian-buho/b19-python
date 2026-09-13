@@ -10,7 +10,7 @@ identity:
     en: Community-maintained distribution of CPython based on B19/Ubuntu
     es: Distribución de CPython mantenida por la comunidad, basada en B19/Ubuntu
     uk: Дистрибуція CPython з підтримкою спільноти на основі B19/Ubuntu
-  title: B19/Python
+  title: B19 / Python
   description:
     en: Community-maintained distribution of CPython built on B19/Ubuntu. This repository holds only the packaging — Dockerfile, build scripts, and configuration, all MIT-licensed; the upstream CPython is fetched at build time and retains its own licensing.
     es: Distribución de CPython mantenida por la comunidad, construida sobre B19/Ubuntu. Este repositorio contiene únicamente el empaquetado — Dockerfile, scripts de compilación y configuración, todo con licencia MIT; el código original de CPython se obtiene en tiempo de compilación y conserva su propia licencia.
@@ -108,7 +108,8 @@ repositories:
   - role: mirror
     type: git
     url: git@github.com:damian-buho/b19-python.git
-  - role: origin
+  - branch: main
+    role: origin
     type: git
     url: ssh://git@kiota.ch/b19/python.git
 technologies:
