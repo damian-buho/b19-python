@@ -29,53 +29,6 @@ keywords:
   - runtime
   - docker
 kind: SoftwareSourceCode
-links:
-  - label:
-      en: B19/Python on Codeberg
-      es: B19/Python en Codeberg
-      uk: B19/Python на Codeberg
-    tags:
-      - public
-      - badges
-      - badges-gitea
-    type: source-code
-    url: https://codeberg.org/b19/python
-  - label:
-      en: B19/Python on GitHub
-      es: B19/Python en GitHub
-      uk: B19/Python на GitHub
-    tags:
-      - public
-      - badges
-      - badges-github
-    type: source-code
-    url: https://github.com/damian-buho/b19-python
-  - label:
-      en: B19/Python on kiota.ch
-      es: B19/Python en kiota.ch
-      uk: B19/Python на kiota.ch
-    preferred: true
-    type: source-code
-    url: https://kiota.ch/b19/python
-  - label:
-      en: Issues on Codeberg
-      es: Incidencias en Codeberg
-      uk: Issues на Codeberg
-    tags:
-      - support
-    type: bugs
-    url: https://codeberg.org/b19/python/issues
-  - label:
-      en: Issues on GitHub
-      es: Incidencias en GitHub
-      uk: Issues на GitHub
-    tags:
-      - support
-    type: bugs
-    url: https://github.com/damian-buho/b19-python/issues
-  - label: Packages on PyPI
-    type: package-registry
-    url: https://pypi.org/project/python/
 org:
   b19:
     scaffold:
@@ -101,17 +54,18 @@ org:
         parents:
           - url: ssh://git@kiota.ch/b19/ubuntu.git
     status: maintained
+technologies:
+  - python
 repositories:
-  - issues: true
-    role: mirror
-    type: git
-    url: ssh://git@codeberg.org/b19/python.git
-  - role: mirror
-    type: git
-    url: git@github.com:damian-buho/b19-python.git
   - branch: main
     role: origin
     type: git
     url: ssh://git@kiota.ch/b19/python.git
-technologies:
-  - python
+links:
+  - label:
+      en: B19 / Python on kiota.ch
+      es: B19 / Python en kiota.ch
+      uk: B19 / Python на kiota.ch
+    preferred: true
+    type: source-code
+    url: https://kiota.ch/b19/python
