@@ -66,6 +66,12 @@ pf-cli-managed: yes
 - **Образ контейнера** `docker.io/damianbuho/b19-python-3.13:latest`
 - **Образ контейнера** `docker.io/damianbuho/b19-python-3.14:latest`
 
+## Підтримувані платформи
+
+- `linux/amd64`
+- `linux/arm64`
+- `linux/riscv64`
+
 ## Встановлення
 
 Завантажте опублікований образ контейнера:

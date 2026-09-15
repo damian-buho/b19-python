@@ -106,6 +106,10 @@ org:
     scaffold:
       root-stage: root
   projectfile:
+    architecture:
+      - amd64
+      - arm64
+      - riscv64
     build:
       args:
         B19_PYTHON_SERIES: "3.14"

@@ -64,6 +64,12 @@ See [FEATURES.md](FEATURES.md) for the full list.
 - **Container image** `docker.io/damianbuho/b19-python-3.13:latest`
 - **Container image** `docker.io/damianbuho/b19-python-3.14:latest`
 
+## Supported platforms
+
+- `linux/amd64`
+- `linux/arm64`
+- `linux/riscv64`
+
 ## Installation
 
 Pull the published container image:

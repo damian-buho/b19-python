@@ -66,6 +66,12 @@ Consulta [FEATURES.md](FEATURES.md) para ver la lista completa.
 - **Imagen de contenedor** `docker.io/damianbuho/b19-python-3.13:latest`
 - **Imagen de contenedor** `docker.io/damianbuho/b19-python-3.14:latest`
 
+## Plataformas admitidas
+
+- `linux/amd64`
+- `linux/arm64`
+- `linux/riscv64`
+
 ## Instalación
 
 Descarga la imagen de contenedor publicada:
