@@ -68,7 +68,6 @@ See [FEATURES.md](FEATURES.md) for the full list.
 
 - `linux/amd64`
 - `linux/arm64`
-- `linux/riscv64`
 
 ## Installation
 
