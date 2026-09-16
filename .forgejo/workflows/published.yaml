@@ -77,12 +77,19 @@ jobs:
       matrix:
         B19_PYTHON_SERIES: ["3.12", "3.13", "3.14"]
         M6E_ARCH: ["amd64"]
+        include:
+          - B19_PYTHON_SERIES: "3.12"
+            B19_PYTHON_SERIES_SLUG: "3-12"
+          - B19_PYTHON_SERIES: "3.13"
+            B19_PYTHON_SERIES_SLUG: "3-13"
+          - B19_PYTHON_SERIES: "3.14"
+            B19_PYTHON_SERIES_SLUG: "3-14"
     env:
       B19_PYTHON_SERIES: ${{ matrix.B19_PYTHON_SERIES }}
       M6E_ARCH: ${{ matrix.M6E_ARCH }}
       M6E_IMAGE_FULLNAME: b19/python-${{ matrix.B19_PYTHON_SERIES }}:${{ vars.BASE_IMAGE_DEFAULT_VERSION || 'latest' }}-${{ github.run_id }}-${{ matrix.M6E_ARCH }}
-      M6E_COMPOSE_PROJECT_NAME: ci-b19-python-${{ matrix.B19_PYTHON_SERIES }}-${{ matrix.M6E_ARCH }}-${{ github.run_id }}-${{ github.run_attempt }}
-      M6E_CONTAINER_INSTANCE: ci-b19-python-${{ matrix.B19_PYTHON_SERIES }}-${{ matrix.M6E_ARCH }}-${{ github.run_id }}-${{ github.run_attempt }}
+      M6E_COMPOSE_PROJECT_NAME: ci-b19-python-${{ matrix.B19_PYTHON_SERIES_SLUG }}-${{ matrix.M6E_ARCH }}-${{ github.run_id }}-${{ github.run_attempt }}
+      M6E_CONTAINER_INSTANCE: ci-b19-python-${{ matrix.B19_PYTHON_SERIES_SLUG }}-${{ matrix.M6E_ARCH }}-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -121,7 +128,7 @@ jobs:
         uses: projectfile/actions/docker-cleanup@v1
         with:
           image: b19/python-${{ matrix.B19_PYTHON_SERIES }}:${{ env.M6E_TAG }}-${{ github.run_id }}-${{ matrix.M6E_ARCH }}
-          network: ci-b19-python-${{ matrix.B19_PYTHON_SERIES }}-${{ matrix.M6E_ARCH }}-${{ env.M6E_RUN_SCOPE }}-network
+          network: ci-b19-python-${{ matrix.B19_PYTHON_SERIES_SLUG }}-${{ matrix.M6E_ARCH }}-${{ env.M6E_RUN_SCOPE }}-network
   container-ready-to-test:
     runs-on: docker
     needs: ["container-is-ok"]
