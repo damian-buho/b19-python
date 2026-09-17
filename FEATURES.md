@@ -27,7 +27,7 @@ SPDX-License-Identifier: MIT
 - Declarative pip dependencies supported via plain-text `pip.deps` files.
 - pip and setuptools are pinned to specific versions, not whatever ships with the Python release.
 
-## Inherited from B19/Ubuntu
+## Inherited from B19 / Ubuntu
 
 ### Persistent APT cache across builds
 
