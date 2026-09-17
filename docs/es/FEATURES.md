@@ -29,7 +29,7 @@ SPDX-License-Identifier: MIT
 - Se admiten dependencias pip declarativas mediante simples archivos de texto `pip.deps`.
 - pip y setuptools están fijados a versiones concretas, no a lo que traiga el release de Python.
 
-## Heredado de B19/Ubuntu
+## Heredado de B19 / Ubuntu
 
 ### Caché APT persistente entre compilaciones
 
