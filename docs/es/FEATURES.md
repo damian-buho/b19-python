@@ -11,23 +11,18 @@ SPDX-License-Identifier: MIT
 
 ## Características del proyecto
 
-### CPython compilado desde el código fuente con PGO y LTO
+### CPython compilado para la velocidad
 
-- CPython se compila a partir del código fuente upstream usando la cadena de herramientas `b19/gcc`, no se instala desde paquetes de la distribución.
-- Optimización guiada por perfil activada mediante `--enable-optimizations` con una tarea de perfil PGO curada (subconjunto de la suite de tests, timeout de 20 minutos).
-- Optimización en tiempo de enlazado activada mediante `--with-lto` para una optimización de programa completo.
-- Varias series disponibles (3.12, 3.13, 3.14, opcionales 3.10, 3.11), seleccionables en tiempo de compilación mediante `B19_PYTHON_SERIES`.
-- Se compila tanto para amd64 como para arm64.
-- A `./configure` se le pasan nombres de compilador desnudos (`CC=gcc CXX=g++`) para que `_sysconfigdata` registre nombres desnudos y no la ruta absoluta del envolvente compile-cache de `b19/gcc`. Sin esto, CPython 3.14 (upstream [#151547](https://github.com/python/cpython/issues/151547)) guarda `/usr/local/lib/compile-cache/g++`, ausente en la imagen limpia de runtime, y rompe la compilación de extensiones C++ derivadas (PyICU, lxml sdist, etc.).
-- También sirve como fuente de Python para las etapas builder de `b19/node` y `b19/haskell`: solo se extraen los binarios `python3*` y la biblioteca estándar, no la imagen completa.
+- CPython se compila desde el código fuente original con optimización guiada por perfil y en tiempo de enlace, así el código Python corre más rápido que con una compilación de distribución.
+- Publicado para Python 3.12, 3.13 y 3.14 en amd64 y arm64.
+- Las extensiones en C y C++ se compilan contra él en imágenes derivadas sin ruta de compilador que parchear.
 
-### Venv preactivado con integración de uv
+### Un entorno virtual listo con uv
 
-- Un entorno virtual de Python se crea en tiempo de compilación y se reactiva en cada arranque del contenedor mediante un hook del entrypoint.
-- `uv` viene preinstalado y configurado: compilación de bytecode activada (`UV_COMPILE_BYTECODE=1`), descargas gestionadas de Python desactivadas (`UV_PYTHON_DOWNLOADS=never`), apuntando al intérprete compilado.
-- Si hay un `pyproject.toml` en tiempo de compilación, `uv sync --active` se ejecuta automáticamente para instalar las dependencias.
-- Se admiten dependencias pip declarativas mediante simples archivos de texto `pip.deps`.
-- pip y setuptools están fijados a versiones concretas, no a lo que traiga el release de Python.
+- Un entorno virtual está activo en cada shell y en cada arranque, así las instalaciones nunca tocan el intérprete del sistema.
+- uv viene preinstalado y usa el intérprete de la propia imagen, sin descargar otro; las instalaciones se compilan a bytecode para importar antes la primera vez.
+- Un `pyproject.toml` en la compilación se sincroniza solo, y una lista simple `pip.deps` también sirve.
+- pip y setuptools están fijados, así una recompilación instala las mismas herramientas.
 
 ## Heredado de B19 / Ubuntu
 
@@ -132,7 +127,7 @@ Consulte [use-healthcheck.d](../how-to/use-healthcheck.d.md) para la lista de co
 
 - El contenedor se ejecuta como usuario sin privilegios de root (`ubuntu`, UID/GID 1000) con todos los archivos de runtime en propiedad de ese usuario.
 - Una compilación en dos etapas separa la instalación del sistema a nivel root de la configuración del runtime a nivel de usuario.
-- La identidad del usuario es configurable en tiempo de compilación.
+- La identidad del usuario es configurable en tiempo de compilación, y un arranque opcional como root la reasigna al usuario del host para que los montajes bind conserven su propietario.
 
 ### Soporte de compilación y runtime aislados de internet (air-gapped/offline)
 

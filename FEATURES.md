@@ -9,23 +9,18 @@ SPDX-License-Identifier: MIT
 
 ## Project Features
 
-### CPython compiled from source with PGO and LTO
+### CPython built for speed
 
-- CPython is built from upstream source using the `b19/gcc` toolchain, not installed from distribution packages.
-- Profile-guided optimization enabled via `--enable-optimizations` with a curated PGO profile task (test suite subset, 20-minute timeout).
-- Link-time optimization enabled via `--with-lto` for whole-program optimization.
-- Multiple series available (3.12, 3.13, 3.14, optional 3.10, 3.11), selectable at build time via `B19_PYTHON_SERIES`.
-- Compiles for both amd64 and arm64.
-- Bare compiler names (`CC=gcc CXX=g++`) are passed to `./configure` so `_sysconfigdata` records bare names, not the absolute `b19/gcc` compile-cache wrapper path. Without this, CPython 3.14 (upstream [#151547](https://github.com/python/cpython/issues/151547)) stores `/usr/local/lib/compile-cache/g++`, which is absent from the clean runtime image and breaks downstream C++ extension builds (PyICU, lxml sdist, etc.).
-- Also serves as Python source for `b19/node` and `b19/haskell` builder stages -- only `python3*` binaries and stdlib are extracted, not the full image.
+- CPython is compiled from upstream source with profile-guided and link-time optimization, so Python code runs faster than on a distribution build.
+- Published for Python 3.12, 3.13 and 3.14 on amd64 and arm64.
+- C and C++ extensions build against it in derived images with no compiler path to patch.
 
-### Pre-activated venv with uv integration
+### A ready virtual environment with uv
 
-- A Python virtual environment is created at build time and re-activated at every container startup via an entrypoint hook.
-- `uv` is preinstalled and configured: bytecode compilation enabled (`UV_COMPILE_BYTECODE=1`), managed Python downloads disabled (`UV_PYTHON_DOWNLOADS=never`), pointing at the compiled interpreter.
-- If a `pyproject.toml` is present at build time, `uv sync --active` runs automatically to install dependencies.
-- Declarative pip dependencies supported via plain-text `pip.deps` files.
-- pip and setuptools are pinned to specific versions, not whatever ships with the Python release.
+- A virtual environment is active in every shell and at every start, so installs never touch the system interpreter.
+- uv is preinstalled and uses the image’s own interpreter, never downloading another; installs are byte-compiled for faster first imports.
+- A `pyproject.toml` in the build is synced automatically, and a plain `pip.deps` list works too.
+- pip and setuptools are pinned, so a rebuild installs the same tooling.
 
 ## Inherited from B19 / Ubuntu
 
@@ -129,7 +124,7 @@ See [use-healthcheck.d](../how-to/use-healthcheck.d.md) for the check list, slot
 
 - The container runs as a non-root user (`ubuntu`, UID/GID 1000) with all runtime files owned by that user.
 - A two-stage build separates root-level system installation from user-level runtime setup.
-- User identity is configurable at build time.
+- User identity is configurable at build time, and an opt-in root start remaps it to the host user so bind mounts keep their ownership.
 
 ### Air-gapped / offline build and runtime support
 
