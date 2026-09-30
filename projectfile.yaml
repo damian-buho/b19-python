@@ -21,6 +21,7 @@ includes:
   - .makefile/b19/images/gcc.yaml
   - .makefile/b19/images/ubuntu.yaml
   - .makefile/b19/traits/release.yaml
+  - .makefile/container/traits/image-variant.yaml
   - https://kiota.ch/b19/metadata/raw/branch/main/include.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/forge/github.yaml
   - https://kiota.ch/damian-buho/metadata/raw/branch/main/include.yaml
@@ -66,37 +67,13 @@ links:
       es: Paquetes en Docker Hub
       uk: Пакунки на Docker Hub
     type: package-registry
-    url: https://hub.docker.com/r/damianbuho/b19-python-3.12
-  - label:
-      en: Packages on Docker Hub
-      es: Paquetes en Docker Hub
-      uk: Пакунки на Docker Hub
-    type: package-registry
-    url: https://hub.docker.com/r/damianbuho/b19-python-3.13
-  - label:
-      en: Packages on Docker Hub
-      es: Paquetes en Docker Hub
-      uk: Пакунки на Docker Hub
-    type: package-registry
-    url: https://hub.docker.com/r/damianbuho/b19-python-3.14
+    url: https://hub.docker.com/r/damianbuho/b19-python
   - label:
       en: Packages on GHCR
       es: Paquetes en GHCR
       uk: Пакунки на GHCR
     type: package-registry
-    url: https://github.com/damian-buho/b19-python/pkgs/container/b19%2Fpython-3.12
-  - label:
-      en: Packages on GHCR
-      es: Paquetes en GHCR
-      uk: Пакунки на GHCR
-    type: package-registry
-    url: https://github.com/damian-buho/b19-python/pkgs/container/b19%2Fpython-3.13
-  - label:
-      en: Packages on GHCR
-      es: Paquetes en GHCR
-      uk: Пакунки на GHCR
-    type: package-registry
-    url: https://github.com/damian-buho/b19-python/pkgs/container/b19%2Fpython-3.14
+    url: https://github.com/damian-buho/b19-python/pkgs/container/b19%2Fpython
 org:
   b19:
     scaffold:
@@ -110,8 +87,10 @@ org:
         B19_PYTHON_SERIES: "3.14"
     image:
       series: "{B19_PYTHON_SERIES}"
-      path: ${org}/${name}-${series}
-      flatpath: ${org}-${name}-${series}
+      tag: ${series}
+      variant:
+        parts:
+          - series
     ci:
       image: b19/python-{B19_PYTHON_SERIES}
       matrix:
