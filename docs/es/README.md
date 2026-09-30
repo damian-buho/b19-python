@@ -29,12 +29,12 @@ También hereda las características de B19 / Ubuntu; consulta [Características
 
 ## Qué entrega este proyecto
 
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python-3.12:latest`
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python-3.13:latest`
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python-3.14:latest`
-- **Imagen de contenedor** `damianbuho/b19-python-3.12:latest`
-- **Imagen de contenedor** `damianbuho/b19-python-3.13:latest`
-- **Imagen de contenedor** `damianbuho/b19-python-3.14:latest`
+- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:3.12`
+- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:3.13`
+- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:3.14`
+- **Imagen de contenedor** `damianbuho/b19-python:3.12`
+- **Imagen de contenedor** `damianbuho/b19-python:3.13`
+- **Imagen de contenedor** `damianbuho/b19-python:3.14`
 
 ## Instalación
 
@@ -43,13 +43,13 @@ Descarga la imagen de contenedor publicada:
 ### Descargar de GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python-3.12:latest
+docker pull ghcr.io/damian-buho/b19/python:3.12
 ```
 
 ### Descargar de DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python-3.12:latest
+docker pull damianbuho/b19-python:3.12
 ```
 
 Serie: `3.12` | `3.13` | `3.14`
@@ -61,7 +61,7 @@ Si los registros anteriores no están disponibles, descarga desde el origen:
 ### Descargar de Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python-3.12:latest
+docker pull kiota.ch/b19/python:3.12
 ```
 
 Serie: `3.12` | `3.13` | `3.14`
@@ -73,13 +73,13 @@ Construye sobre esta imagen:
 ### Desde GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python-3.12:latest
+FROM ghcr.io/damian-buho/b19/python:3.12
 ```
 
 ### Desde DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python-3.12:latest
+FROM damianbuho/b19-python:3.12
 ```
 
 Serie: `3.12` | `3.13` | `3.14`

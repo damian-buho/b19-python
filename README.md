@@ -27,12 +27,12 @@ It also inherits the features of B19 / Ubuntu — see [Features](docs/FEATURES.m
 
 ## What this provides
 
-- **Container image** `ghcr.io/damian-buho/b19/python-3.12:latest`
-- **Container image** `ghcr.io/damian-buho/b19/python-3.13:latest`
-- **Container image** `ghcr.io/damian-buho/b19/python-3.14:latest`
-- **Container image** `damianbuho/b19-python-3.12:latest`
-- **Container image** `damianbuho/b19-python-3.13:latest`
-- **Container image** `damianbuho/b19-python-3.14:latest`
+- **Container image** `ghcr.io/damian-buho/b19/python:3.12`
+- **Container image** `ghcr.io/damian-buho/b19/python:3.13`
+- **Container image** `ghcr.io/damian-buho/b19/python:3.14`
+- **Container image** `damianbuho/b19-python:3.12`
+- **Container image** `damianbuho/b19-python:3.13`
+- **Container image** `damianbuho/b19-python:3.14`
 
 ## Installation
 
@@ -41,13 +41,13 @@ Pull the published container image:
 ### Pull from GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python-3.12:latest
+docker pull ghcr.io/damian-buho/b19/python:3.12
 ```
 
 ### Pull from DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python-3.12:latest
+docker pull damianbuho/b19-python:3.12
 ```
 
 Series: `3.12` | `3.13` | `3.14`
@@ -59,7 +59,7 @@ If the registries above are unreachable, pull from the origin instead:
 ### Pull from Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python-3.12:latest
+docker pull kiota.ch/b19/python:3.12
 ```
 
 Series: `3.12` | `3.13` | `3.14`
@@ -71,13 +71,13 @@ Build on top of this image:
 ### From GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python-3.12:latest
+FROM ghcr.io/damian-buho/b19/python:3.12
 ```
 
 ### From DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python-3.12:latest
+FROM damianbuho/b19-python:3.12
 ```
 
 Series: `3.12` | `3.13` | `3.14`

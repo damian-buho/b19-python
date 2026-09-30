@@ -29,12 +29,12 @@ pf-cli-managed: yes
 
 ## Що надає цей проєкт
 
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python-3.12:latest`
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python-3.13:latest`
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python-3.14:latest`
-- **Образ контейнера** `damianbuho/b19-python-3.12:latest`
-- **Образ контейнера** `damianbuho/b19-python-3.13:latest`
-- **Образ контейнера** `damianbuho/b19-python-3.14:latest`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:3.12`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:3.13`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:3.14`
+- **Образ контейнера** `damianbuho/b19-python:3.12`
+- **Образ контейнера** `damianbuho/b19-python:3.13`
+- **Образ контейнера** `damianbuho/b19-python:3.14`
 
 ## Встановлення
 
@@ -43,13 +43,13 @@ pf-cli-managed: yes
 ### Завантажити з GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python-3.12:latest
+docker pull ghcr.io/damian-buho/b19/python:3.12
 ```
 
 ### Завантажити з DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python-3.12:latest
+docker pull damianbuho/b19-python:3.12
 ```
 
 Серія: `3.12` | `3.13` | `3.14`
@@ -61,7 +61,7 @@ docker pull damianbuho/b19-python-3.12:latest
 ### Завантажити з Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python-3.12:latest
+docker pull kiota.ch/b19/python:3.12
 ```
 
 Серія: `3.12` | `3.13` | `3.14`
@@ -73,13 +73,13 @@ docker pull kiota.ch/b19/python-3.12:latest
 ### З GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python-3.12:latest
+FROM ghcr.io/damian-buho/b19/python:3.12
 ```
 
 ### З DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python-3.12:latest
+FROM damianbuho/b19-python:3.12
 ```
 
 Серія: `3.12` | `3.13` | `3.14`
