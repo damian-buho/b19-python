@@ -92,7 +92,6 @@ org:
         parts:
           - series
     ci:
-      image: b19/python-{B19_PYTHON_SERIES}
       matrix:
         axes:
           B19_PYTHON_SERIES:
