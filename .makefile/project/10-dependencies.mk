@@ -13,11 +13,11 @@ $(FETCH_PATH)/.python.3.10.20.stamp: .container/compile-gcc/deps/python/url.deps
 
 PREREQUISITES += .container/compile-gcc/deps/python/3.10/hash.deps
 
-$(FETCH_PATH)/.python.3.11.15.stamp: .container/compile-gcc/deps/python/url.deps .container/compile-gcc/deps/python/3.11/version.deps
+$(FETCH_PATH)/.python.3.11.17.stamp: .container/compile-gcc/deps/python/url.deps .container/compile-gcc/deps/python/3.11/version.deps
 	M6E_DEPS_STAGE=compile-gcc M6E_SERIES=3.11 .makefile/container/scripts/fetch.sh python
 	touch $@
 
-.container/compile-gcc/deps/python/3.11/hash.deps: $(FETCH_PATH)/.python.3.11.15.stamp
+.container/compile-gcc/deps/python/3.11/hash.deps: $(FETCH_PATH)/.python.3.11.17.stamp
 	M6E_DEPS_STAGE=compile-gcc M6E_SERIES=3.11 .makefile/container/scripts/update-hash.sh python
 
 PREREQUISITES += .container/compile-gcc/deps/python/3.11/hash.deps
