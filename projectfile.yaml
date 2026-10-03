@@ -87,7 +87,7 @@ org:
       args:
         B19_PYTHON_SERIES: "3.14"
     image:
-      series: "{B19_PYTHON_SERIES}"
+      series: "py{B19_PYTHON_SERIES}"
       tag: ${series}
       variant:
         parts:

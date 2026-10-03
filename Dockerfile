@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
-ARG B19_GCC_BASE_IMAGE=registry.invalid/b19/gcc:16
+ARG B19_GCC_BASE_IMAGE=registry.invalid/b19/gcc:gcc16
 ARG B19_UBUNTU_BASE_IMAGE=registry.invalid/b19/ubuntu:resolute
 ARG B19_PYTHON_SERIES=3.14
 
