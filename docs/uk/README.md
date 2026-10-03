@@ -52,7 +52,7 @@ docker pull ghcr.io/damian-buho/b19/python:py3.12
 docker pull damianbuho/b19-python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Серія: `py3.12` | `py3.13` | `py3.14`
 
 Стабільні випуски також публікують теґи `X.Y.Z`, `X.Y` і `X` — завантажте той рівень точності, який хочете зафіксувати.
 
@@ -64,7 +64,7 @@ B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 docker pull kiota.ch/b19/python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Серія: `py3.12` | `py3.13` | `py3.14`
 
 ## Використання
 
@@ -82,7 +82,7 @@ FROM ghcr.io/damian-buho/b19/python:py3.12
 FROM damianbuho/b19-python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Серія: `py3.12` | `py3.13` | `py3.14`
 
 Для рекомендованого багатоетапного шаблону та системи хуків збірки (build.d) створіть похідний проєкт за допомогою `b19/scripts/scaffold.sh` з [m6e/b19](https://kiota.ch/m6e/b19).
 

@@ -52,7 +52,7 @@ docker pull ghcr.io/damian-buho/b19/python:py3.12
 docker pull damianbuho/b19-python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Serie: `py3.12` | `py3.13` | `py3.14`
 
 Las versiones estables también publican las etiquetas `X.Y.Z`, `X.Y` y `X`: descarga el nivel de precisión que quieras fijar.
 
@@ -64,7 +64,7 @@ Si los registros anteriores no están disponibles, descarga desde el origen:
 docker pull kiota.ch/b19/python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Serie: `py3.12` | `py3.13` | `py3.14`
 
 ## Uso
 
@@ -82,7 +82,7 @@ FROM ghcr.io/damian-buho/b19/python:py3.12
 FROM damianbuho/b19-python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Serie: `py3.12` | `py3.13` | `py3.14`
 
 Para el patrón multietapa recomendado y el sistema de hooks de compilación (build.d), genera un derivado con `b19/scripts/scaffold.sh` de [m6e/b19](https://kiota.ch/m6e/b19).
 

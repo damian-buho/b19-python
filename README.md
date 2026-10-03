@@ -50,7 +50,7 @@ docker pull ghcr.io/damian-buho/b19/python:py3.12
 docker pull damianbuho/b19-python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Series: `py3.12` | `py3.13` | `py3.14`
 
 Stable releases also publish `X.Y.Z`, `X.Y` and `X` tags — pull the precision you want to pin.
 
@@ -62,7 +62,7 @@ If the registries above are unreachable, pull from the origin instead:
 docker pull kiota.ch/b19/python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Series: `py3.12` | `py3.13` | `py3.14`
 
 ## Usage
 
@@ -80,7 +80,7 @@ FROM ghcr.io/damian-buho/b19/python:py3.12
 FROM damianbuho/b19-python:py3.12
 ```
 
-B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
+Series: `py3.12` | `py3.13` | `py3.14`
 
 For the recommended multi-stage pattern and the build-hook system (build.d), scaffold a derivative with `b19/scripts/scaffold.sh` from [m6e/b19](https://kiota.ch/m6e/b19).
 
