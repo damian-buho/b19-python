@@ -18,7 +18,7 @@ Distribución de CPython mantenida por la comunidad, construida sobre B19/Ubuntu
 
 [![Publish pipeline on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/published.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Vulnerability audit on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/audited.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Dependency freshness on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Analysis sweep on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions)
 
-[![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyze.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
+[![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
 
 ## Características
 
@@ -29,12 +29,12 @@ También hereda las características de B19 / Ubuntu; consulta [Características
 
 ## Qué entrega este proyecto
 
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:3.12`
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:3.13`
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:3.14`
-- **Imagen de contenedor** `damianbuho/b19-python:3.12`
-- **Imagen de contenedor** `damianbuho/b19-python:3.13`
-- **Imagen de contenedor** `damianbuho/b19-python:3.14`
+- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.12`
+- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.13`
+- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.14`
+- **Imagen de contenedor** `damianbuho/b19-python:py3.12`
+- **Imagen de contenedor** `damianbuho/b19-python:py3.13`
+- **Imagen de contenedor** `damianbuho/b19-python:py3.14`
 
 ## Instalación
 
@@ -43,16 +43,16 @@ Descarga la imagen de contenedor publicada:
 ### Descargar de GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python:3.12
+docker pull ghcr.io/damian-buho/b19/python:py3.12
 ```
 
 ### Descargar de DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python:3.12
+docker pull damianbuho/b19-python:py3.12
 ```
 
-Serie: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 Las versiones estables también publican las etiquetas `X.Y.Z`, `X.Y` y `X`: descarga el nivel de precisión que quieras fijar.
 
@@ -61,10 +61,10 @@ Si los registros anteriores no están disponibles, descarga desde el origen:
 ### Descargar de Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python:3.12
+docker pull kiota.ch/b19/python:py3.12
 ```
 
-Serie: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 ## Uso
 
@@ -73,16 +73,16 @@ Construye sobre esta imagen:
 ### Desde GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python:3.12
+FROM ghcr.io/damian-buho/b19/python:py3.12
 ```
 
 ### Desde DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python:3.12
+FROM damianbuho/b19-python:py3.12
 ```
 
-Serie: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 Para el patrón multietapa recomendado y el sistema de hooks de compilación (build.d), genera un derivado con `b19/scripts/scaffold.sh` de [m6e/b19](https://kiota.ch/m6e/b19).
 

@@ -18,7 +18,7 @@ pf-cli-managed: yes
 
 [![Publish pipeline on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/published.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Vulnerability audit on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/audited.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Dependency freshness on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Analysis sweep on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions)
 
-[![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyze.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
+[![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
 
 ## Можливості
 
@@ -29,12 +29,12 @@ pf-cli-managed: yes
 
 ## Що надає цей проєкт
 
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python:3.12`
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python:3.13`
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python:3.14`
-- **Образ контейнера** `damianbuho/b19-python:3.12`
-- **Образ контейнера** `damianbuho/b19-python:3.13`
-- **Образ контейнера** `damianbuho/b19-python:3.14`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.12`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.13`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.14`
+- **Образ контейнера** `damianbuho/b19-python:py3.12`
+- **Образ контейнера** `damianbuho/b19-python:py3.13`
+- **Образ контейнера** `damianbuho/b19-python:py3.14`
 
 ## Встановлення
 
@@ -43,16 +43,16 @@ pf-cli-managed: yes
 ### Завантажити з GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python:3.12
+docker pull ghcr.io/damian-buho/b19/python:py3.12
 ```
 
 ### Завантажити з DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python:3.12
+docker pull damianbuho/b19-python:py3.12
 ```
 
-Серія: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 Стабільні випуски також публікують теґи `X.Y.Z`, `X.Y` і `X` — завантажте той рівень точності, який хочете зафіксувати.
 
@@ -61,10 +61,10 @@ docker pull damianbuho/b19-python:3.12
 ### Завантажити з Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python:3.12
+docker pull kiota.ch/b19/python:py3.12
 ```
 
-Серія: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 ## Використання
 
@@ -73,16 +73,16 @@ docker pull kiota.ch/b19/python:3.12
 ### З GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python:3.12
+FROM ghcr.io/damian-buho/b19/python:py3.12
 ```
 
 ### З DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python:3.12
+FROM damianbuho/b19-python:py3.12
 ```
 
-Серія: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 Для рекомендованого багатоетапного шаблону та системи хуків збірки (build.d) створіть похідний проєкт за допомогою `b19/scripts/scaffold.sh` з [m6e/b19](https://kiota.ch/m6e/b19).
 

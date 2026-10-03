@@ -16,7 +16,7 @@ Community-maintained distribution of CPython built on B19/Ubuntu. This repositor
 
 [![Publish pipeline on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/published.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Vulnerability audit on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/audited.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Dependency freshness on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions) [![Analysis sweep on GitHub](https://github.com/damian-buho/b19-python/actions/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://github.com/damian-buho/b19-python/actions)
 
-[![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyze.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
+[![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
 
 ## Features
 
@@ -27,12 +27,12 @@ It also inherits the features of B19 / Ubuntu — see [Features](docs/FEATURES.m
 
 ## What this provides
 
-- **Container image** `ghcr.io/damian-buho/b19/python:3.12`
-- **Container image** `ghcr.io/damian-buho/b19/python:3.13`
-- **Container image** `ghcr.io/damian-buho/b19/python:3.14`
-- **Container image** `damianbuho/b19-python:3.12`
-- **Container image** `damianbuho/b19-python:3.13`
-- **Container image** `damianbuho/b19-python:3.14`
+- **Container image** `ghcr.io/damian-buho/b19/python:py3.12`
+- **Container image** `ghcr.io/damian-buho/b19/python:py3.13`
+- **Container image** `ghcr.io/damian-buho/b19/python:py3.14`
+- **Container image** `damianbuho/b19-python:py3.12`
+- **Container image** `damianbuho/b19-python:py3.13`
+- **Container image** `damianbuho/b19-python:py3.14`
 
 ## Installation
 
@@ -41,16 +41,16 @@ Pull the published container image:
 ### Pull from GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python:3.12
+docker pull ghcr.io/damian-buho/b19/python:py3.12
 ```
 
 ### Pull from DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python:3.12
+docker pull damianbuho/b19-python:py3.12
 ```
 
-Series: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 Stable releases also publish `X.Y.Z`, `X.Y` and `X` tags — pull the precision you want to pin.
 
@@ -59,10 +59,10 @@ If the registries above are unreachable, pull from the origin instead:
 ### Pull from Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python:3.12
+docker pull kiota.ch/b19/python:py3.12
 ```
 
-Series: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 ## Usage
 
@@ -71,16 +71,16 @@ Build on top of this image:
 ### From GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python:3.12
+FROM ghcr.io/damian-buho/b19/python:py3.12
 ```
 
 ### From DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python:3.12
+FROM damianbuho/b19-python:py3.12
 ```
 
-Series: `3.12` | `3.13` | `3.14`
+B19_PYTHON_SERIES: `3.12` | `3.13` | `3.14`
 
 For the recommended multi-stage pattern and the build-hook system (build.d), scaffold a derivative with `b19/scripts/scaffold.sh` from [m6e/b19](https://kiota.ch/m6e/b19).
 
