@@ -99,6 +99,10 @@ org:
             - "3.12"
             - "3.13"
             - "3.14"
+      nodes:
+        image-is-built:
+          # Source compile saturates the runner: chain the series, an edge both forges honour.
+          serialise: B19_PYTHON_SERIES
     conventions:
       fragments:
         parents:
