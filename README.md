@@ -30,9 +30,11 @@ It also inherits the features of B19 / Ubuntu — see [Features](docs/FEATURES.m
 - **Container image** `ghcr.io/damian-buho/b19/python:py3.12`
 - **Container image** `ghcr.io/damian-buho/b19/python:py3.13`
 - **Container image** `ghcr.io/damian-buho/b19/python:py3.14`
+- **Container image** `ghcr.io/damian-buho/b19/python:py3.15`
 - **Container image** `damianbuho/b19-python:py3.12`
 - **Container image** `damianbuho/b19-python:py3.13`
 - **Container image** `damianbuho/b19-python:py3.14`
+- **Container image** `damianbuho/b19-python:py3.15`
 
 ## Installation
 
@@ -50,7 +52,7 @@ docker pull ghcr.io/damian-buho/b19/python:py3.12
 docker pull damianbuho/b19-python:py3.12
 ```
 
-Series: `py3.12` | `py3.13` | `py3.14`
+Series: `py3.12` | `py3.13` | `py3.14` | `py3.15`
 
 Stable releases also publish `X.Y.Z`, `X.Y` and `X` tags — pull the precision you want to pin.
 
@@ -62,7 +64,7 @@ If the registries above are unreachable, pull from the origin instead:
 docker pull kiota.ch/b19/python:py3.12
 ```
 
-Series: `py3.12` | `py3.13` | `py3.14`
+Series: `py3.12` | `py3.13` | `py3.14` | `py3.15`
 
 ## Usage
 
@@ -80,7 +82,7 @@ FROM ghcr.io/damian-buho/b19/python:py3.12
 FROM damianbuho/b19-python:py3.12
 ```
 
-Series: `py3.12` | `py3.13` | `py3.14`
+Series: `py3.12` | `py3.13` | `py3.14` | `py3.15`
 
 For the recommended multi-stage pattern and the build-hook system (build.d), scaffold a derivative with `b19/scripts/scaffold.sh` from [m6e/b19](https://kiota.ch/m6e/b19).
 

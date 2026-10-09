@@ -14,7 +14,7 @@ CPython compiled from source with PGO and LTO.
 
 - Builder: `b19/gcc:{series}`
 - Final base: `b19/ubuntu:${B19_UBUNTU_SERIES}`
-- Series: 3.12, 3.13, 3.14 (optional: 3.10, 3.11)
+- Series: 3.12, 3.13, 3.14, 3.15 (optional: 3.11)
 - Image name: `b19/python:{series}`
 - Arch: amd64, arm64
 

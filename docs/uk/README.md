@@ -32,9 +32,11 @@ pf-cli-managed: yes
 - **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.12`
 - **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.13`
 - **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.14`
+- **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.15`
 - **Образ контейнера** `damianbuho/b19-python:py3.12`
 - **Образ контейнера** `damianbuho/b19-python:py3.13`
 - **Образ контейнера** `damianbuho/b19-python:py3.14`
+- **Образ контейнера** `damianbuho/b19-python:py3.15`
 
 ## Встановлення
 
@@ -52,7 +54,7 @@ docker pull ghcr.io/damian-buho/b19/python:py3.12
 docker pull damianbuho/b19-python:py3.12
 ```
 
-Серія: `py3.12` | `py3.13` | `py3.14`
+Серія: `py3.12` | `py3.13` | `py3.14` | `py3.15`
 
 Стабільні випуски також публікують теґи `X.Y.Z`, `X.Y` і `X` — завантажте той рівень точності, який хочете зафіксувати.
 
@@ -64,7 +66,7 @@ docker pull damianbuho/b19-python:py3.12
 docker pull kiota.ch/b19/python:py3.12
 ```
 
-Серія: `py3.12` | `py3.13` | `py3.14`
+Серія: `py3.12` | `py3.13` | `py3.14` | `py3.15`
 
 ## Використання
 
@@ -82,7 +84,7 @@ FROM ghcr.io/damian-buho/b19/python:py3.12
 FROM damianbuho/b19-python:py3.12
 ```
 
-Серія: `py3.12` | `py3.13` | `py3.14`
+Серія: `py3.12` | `py3.13` | `py3.14` | `py3.15`
 
 Для рекомендованого багатоетапного шаблону та системи хуків збірки (build.d) створіть похідний проєкт за допомогою `b19/scripts/scaffold.sh` з [m6e/b19](https://kiota.ch/m6e/b19).
 

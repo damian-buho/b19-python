@@ -85,7 +85,7 @@ org:
       - arm64
     build:
       args:
-        B19_PYTHON_SERIES: "3.14"
+        B19_PYTHON_SERIES: "3.15"
     image:
       series: "py{B19_PYTHON_SERIES}"
       tag: ${series}
@@ -99,6 +99,7 @@ org:
             - "3.12"
             - "3.13"
             - "3.14"
+            - "3.15"
       nodes:
         image-is-built:
           # Source compile saturates the runner: chain the series, an edge both forges honour.
