@@ -28,8 +28,8 @@ repository-code: https://kiota.ch/b19/python
 keywords:
   - python
   - cpython
-  - language
-  - runtime
-  - docker
+  - uv
+  - venv
+  - pip
 version: 0.8.1
 date-released: "2026-10-11"
