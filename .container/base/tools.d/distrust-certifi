@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 Damián Búho <damian.buho@proton.me>
+#
+# SPDX-License-Identifier: MIT
+
+set -euo pipefail
+
+# shellcheck source=/dev/null
+. b19-i18n
+
+for root in "$@"; do
+  mapfile -t bundles < <(fd --hidden --no-ignore --type file --full-path 'certifi/cacert\.pem$' "${root}" 2>/dev/null)
+  b19-log info "PIP" "$(_p 'Found %s certifi bundles under %s' "${#bundles[@]}" "${root}")"
+  [ "${#bundles[@]}" -eq 0 ] || b19-ca-distrust bundle "${bundles[@]}"
+done

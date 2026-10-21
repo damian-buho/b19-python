@@ -31,6 +31,10 @@ CPython compiled from source with PGO and LTO.
 - `uv sync` runs automatically if `pyproject.toml` detected
 - Declarative pip deps via `pip.deps` in `.container/user/deps/`
 
+## CA trust
+
+`SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` point at the system bundle, which [b19/Ubuntu](../ubuntu/AGENTS.md) cuts from its distrust list. A `certifi/cacert.pem` (pip vendors one) is a separate copy: `tools.d/distrust-certifi` cuts every one under `${B19_PREFIX}/lib` (`base/post/510`) and `${B19_HOME}` (`user/post/610`), and `test.d/1600` fails on a listed fingerprint left in any of them.
+
 ## Note
 
 Also used as Python source in `b19/node` and `b19/haskell` builder stages — only `python3*` binaries and stdlib are COPY’d, not the full image.

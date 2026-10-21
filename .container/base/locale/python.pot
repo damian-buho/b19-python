@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: MIT
 msgid ""
 msgstr ""
-"Project-Id-Version: python 1.1.8\n"
-"Report-Msgid-Bugs-To: https://codeberg.org/b19/python/issues\n"
-"POT-Creation-Date: 2026-09-07 03:45+0000\n"
+"Project-Id-Version: python development\n"
+"Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-python/issues\n"
+"POT-Creation-Date: 2026-10-21 00:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,6 +14,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: .container/base/tools.d/distrust-certifi:14
+msgid "Found %s certifi bundles under %s"
+msgstr ""
 
 #: .container/base/tools.d/install-pip-from-deps:17
 msgid "PIP Dependencies list is detected"
@@ -81,4 +85,12 @@ msgstr ""
 
 #: .container/user/test.d/1500-test-runtime.sh:21
 msgid "python-%s runtime test passed"
+msgstr ""
+
+#: .container/user/test.d/1600-check-certifi-distrust.sh:24
+msgid "%s still trusts %s"
+msgstr ""
+
+#: .container/user/test.d/1600-check-certifi-distrust.sh:31
+msgid "%s certifi bundles hold no distrusted certificate"
 msgstr ""

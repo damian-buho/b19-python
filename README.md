@@ -20,6 +20,7 @@ CPython compiled from source with pre-activated venv and uv-first defaults — a
 
 ## Features
 
+- One certificate trust store for every Python TLS client
 - CPython built for speed
 - A ready virtual environment with uv
 

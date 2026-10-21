@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: b19-python\n"
-"Report-Msgid-Bugs-To: i18n@b19.dev\n"
-"POT-Creation-Date: 2026-05-02 16:15-0300\n"
+"Report-Msgid-Bugs-To: https://github.com/damian-buho/b19-python/issues\n"
+"POT-Creation-Date: 2026-10-21 00:08+0000\n"
 "PO-Revision-Date: 2026-02-18 00:00+0000\n"
 "Last-Translator: b19 team\n"
 "Language-Team: Spanish\n"
@@ -16,54 +16,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .container/user/build.d/user/post/500-uv-sync.i.sh:5
-msgid "Sync dependencies"
-msgstr "Sincronizar dependencias"
+#: .container/base/tools.d/distrust-certifi:14
+msgid "Found %s certifi bundles under %s"
+msgstr "Se encontraron %s paquetes certifi en %s"
 
-#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:5
-msgid "Configure"
-msgstr "Configurar"
-
-#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:15
-msgid "Build"
-msgstr "Compilar"
-
-#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:18
-msgid "Install"
-msgstr "Instalar"
-
-#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:21
-msgid "Cleanup .a"
-msgstr "Limpiar"
-
-#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:24
-msgid "Cleanup .o"
-msgstr "Limpiar"
-
-#: .container/compile-gcc/build.d/compile-gcc/post/100-download-source.sh:12
-msgid "Extract %s"
-msgstr "Extraer %s"
-
-#: .container/base/tools.d/setup-venv:6
-msgid "Create venv"
-msgstr "Crear entorno virtual"
-
-#: .container/base/tools.d/setup-venv:9
-msgid "Set activate as executable"
-msgstr "Dar permisos de ejecución a activate"
-
-#: .container/base/tools.d/install-pip-from-deps:15
+#: .container/base/tools.d/install-pip-from-deps:17
 msgid "PIP Dependencies list is detected"
 msgstr "Lista de dependencias PIP encontrada"
 
-#: .container/base/tools.d/install-pip-from-deps:20
+#: .container/base/tools.d/install-pip-from-deps:22
 msgid "Install dependencies from"
 msgstr "Instalar dependencias desde"
 
-#: .container/base/tools.d/install-pip-from-deps:23
+#: .container/base/tools.d/install-pip-from-deps:25
 msgid "Remove"
 msgstr "Eliminar"
 
-#: .container/base/tools.d/install-pip-from-deps:26
+#: .container/base/tools.d/install-pip-from-deps:28
 msgid "PIP Dependencies list is not detected"
 msgstr "Lista de dependencias PIP no encontrada"
+
+#: .container/base/tools.d/setup-venv:10
+msgid "Create venv"
+msgstr "Crear entorno virtual"
+
+#: .container/base/tools.d/setup-venv:13
+msgid "Set activate as executable"
+msgstr "Dar permisos de ejecución a activate"
+
+#: .container/base/tools.d/strip-pip-vendored-sbom:20
+msgid "Stripped pip vendored SBOM: %s"
+msgstr ""
+
+#: .container/compile-gcc/build.d/compile-gcc/post/100-download-source.sh:16
+msgid "Extract %s"
+msgstr "Extraer %s"
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:17
+msgid "Configure"
+msgstr "Configurar"
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:26
+msgid "Build"
+msgstr "Compilar"
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:29
+msgid "Install"
+msgstr "Instalar"
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:32
+msgid "Cleanup .a"
+msgstr "Limpiar"
+
+#: .container/compile-gcc/build.d/compile-gcc/post/500-build-python.sh:35
+msgid "Cleanup .o"
+msgstr "Limpiar"
+
+#: .container/user/build.d/user/post/500-uv-sync.i.sh:9
+msgid "Sync dependencies"
+msgstr "Sincronizar dependencias"
+
+#: .container/user/entrypoint.d/1500-activate-venv.sh:16
+msgid "Activate %s"
+msgstr ""
+
+#: .container/user/entrypoint.d/1500-activate-venv.sh:17
+msgid "Which python3: %s"
+msgstr ""
+
+#: .container/user/test.d/1500-test-runtime.sh:21
+msgid "python-%s runtime test passed"
+msgstr ""
+
+#: .container/user/test.d/1600-check-certifi-distrust.sh:24
+msgid "%s still trusts %s"
+msgstr "%s todavía confía en %s"
+
+#: .container/user/test.d/1600-check-certifi-distrust.sh:31
+msgid "%s certifi bundles hold no distrusted certificate"
+msgstr "%s paquetes certifi sin certificados desconfiados"

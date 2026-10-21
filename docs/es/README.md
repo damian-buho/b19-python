@@ -22,6 +22,7 @@ CPython compilado desde fuente con venv preactivado y valores uv-first — sincr
 
 ## Características
 
+- Un solo almacén de confianza para todos los clientes TLS de Python
 - CPython compilado para la velocidad
 - Un entorno virtual listo con uv
 
