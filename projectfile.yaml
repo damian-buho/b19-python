@@ -15,7 +15,7 @@ identity:
     en: CPython compiled from source with pre-activated venv and uv-first defaults — automatic uv sync and bytecode compilation.
     es: CPython compilado desde fuente con venv preactivado y valores uv-first — sincronización uv automática y compilación de bytecode.
     uk: CPython із джерел з попередньо активованим venv і налаштуваннями uv-first — автоматичний uv sync і компіляція байткоду.
-  version: 0.9.0
+  version: 0.9.1
   released: "2026-10-21"
   visibility: public
 includes:
