@@ -28,11 +28,9 @@ It also inherits the features of B19 / Ubuntu — see [Features](docs/FEATURES.m
 
 ## What this provides
 
-- **Container image** `ghcr.io/damian-buho/b19/python:py3.12`
 - **Container image** `ghcr.io/damian-buho/b19/python:py3.13`
 - **Container image** `ghcr.io/damian-buho/b19/python:py3.14`
 - **Container image** `ghcr.io/damian-buho/b19/python:py3.15`
-- **Container image** `damianbuho/b19-python:py3.12`
 - **Container image** `damianbuho/b19-python:py3.13`
 - **Container image** `damianbuho/b19-python:py3.14`
 - **Container image** `damianbuho/b19-python:py3.15`
@@ -44,16 +42,16 @@ Pull the published container image:
 ### Pull from GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python:py3.12
+docker pull ghcr.io/damian-buho/b19/python:py3.13
 ```
 
 ### Pull from DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python:py3.12
+docker pull damianbuho/b19-python:py3.13
 ```
 
-Series: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Series: `py3.13` | `py3.14` | `py3.15`
 
 Stable releases also publish `X.Y.Z`, `X.Y` and `X` tags — pull the precision you want to pin.
 
@@ -62,10 +60,10 @@ If the registries above are unreachable, pull from the origin instead:
 ### Pull from Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python:py3.12
+docker pull kiota.ch/b19/python:py3.13
 ```
 
-Series: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Series: `py3.13` | `py3.14` | `py3.15`
 
 ## Usage
 
@@ -74,16 +72,16 @@ Build on top of this image:
 ### From GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python:py3.12
+FROM ghcr.io/damian-buho/b19/python:py3.13
 ```
 
 ### From DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python:py3.12
+FROM damianbuho/b19-python:py3.13
 ```
 
-Series: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Series: `py3.13` | `py3.14` | `py3.15`
 
 For the recommended multi-stage pattern and the build-hook system (build.d), scaffold a derivative with `b19/scripts/scaffold.sh` from [m6e/b19](https://kiota.ch/m6e/b19).
 

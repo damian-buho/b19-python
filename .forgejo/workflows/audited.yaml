@@ -51,7 +51,7 @@ jobs:
     if: (github.event_name == 'workflow_dispatch') || (github.event_name == 'schedule')
     strategy:
       matrix:
-        B19_PYTHON_SERIES: ["3.12", "3.13", "3.14", "3.15"]
+        B19_PYTHON_SERIES: ["3.13", "3.14", "3.15"]
     env:
       B19_PYTHON_SERIES: ${{ matrix.B19_PYTHON_SERIES }}
       M6E_IMAGE_PUBLISHED: kiota.ch/b19/python:py${{ matrix.B19_PYTHON_SERIES }}

@@ -30,11 +30,9 @@ CPython із джерел з попередньо активованим venv і
 
 ## Що надає цей проєкт
 
-- **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.12`
 - **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.13`
 - **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.14`
 - **Образ контейнера** `ghcr.io/damian-buho/b19/python:py3.15`
-- **Образ контейнера** `damianbuho/b19-python:py3.12`
 - **Образ контейнера** `damianbuho/b19-python:py3.13`
 - **Образ контейнера** `damianbuho/b19-python:py3.14`
 - **Образ контейнера** `damianbuho/b19-python:py3.15`
@@ -46,16 +44,16 @@ CPython із джерел з попередньо активованим venv і
 ### Завантажити з GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python:py3.12
+docker pull ghcr.io/damian-buho/b19/python:py3.13
 ```
 
 ### Завантажити з DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python:py3.12
+docker pull damianbuho/b19-python:py3.13
 ```
 
-Серія: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Серія: `py3.13` | `py3.14` | `py3.15`
 
 Стабільні випуски також публікують теґи `X.Y.Z`, `X.Y` і `X` — завантажте той рівень точності, який хочете зафіксувати.
 
@@ -64,10 +62,10 @@ docker pull damianbuho/b19-python:py3.12
 ### Завантажити з Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python:py3.12
+docker pull kiota.ch/b19/python:py3.13
 ```
 
-Серія: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Серія: `py3.13` | `py3.14` | `py3.15`
 
 ## Використання
 
@@ -76,16 +74,16 @@ docker pull kiota.ch/b19/python:py3.12
 ### З GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python:py3.12
+FROM ghcr.io/damian-buho/b19/python:py3.13
 ```
 
 ### З DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python:py3.12
+FROM damianbuho/b19-python:py3.13
 ```
 
-Серія: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Серія: `py3.13` | `py3.14` | `py3.15`
 
 Для рекомендованого багатоетапного шаблону та системи хуків збірки (build.d) створіть похідний проєкт за допомогою `b19/scripts/scaffold.sh` з [m6e/b19](https://kiota.ch/m6e/b19).
 

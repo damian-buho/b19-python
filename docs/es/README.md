@@ -30,11 +30,9 @@ También hereda las características de B19 / Ubuntu; consulta [Características
 
 ## Qué entrega este proyecto
 
-- **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.12`
 - **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.13`
 - **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.14`
 - **Imagen de contenedor** `ghcr.io/damian-buho/b19/python:py3.15`
-- **Imagen de contenedor** `damianbuho/b19-python:py3.12`
 - **Imagen de contenedor** `damianbuho/b19-python:py3.13`
 - **Imagen de contenedor** `damianbuho/b19-python:py3.14`
 - **Imagen de contenedor** `damianbuho/b19-python:py3.15`
@@ -46,16 +44,16 @@ Descarga la imagen de contenedor publicada:
 ### Descargar de GHCR — linux/amd64, linux/arm64
 
 ```sh
-docker pull ghcr.io/damian-buho/b19/python:py3.12
+docker pull ghcr.io/damian-buho/b19/python:py3.13
 ```
 
 ### Descargar de DockerHub — linux/amd64
 
 ```sh
-docker pull damianbuho/b19-python:py3.12
+docker pull damianbuho/b19-python:py3.13
 ```
 
-Serie: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Serie: `py3.13` | `py3.14` | `py3.15`
 
 Las versiones estables también publican las etiquetas `X.Y.Z`, `X.Y` y `X`: descarga el nivel de precisión que quieras fijar.
 
@@ -64,10 +62,10 @@ Si los registros anteriores no están disponibles, descarga desde el origen:
 ### Descargar de Kiota — linux/amd64
 
 ```sh
-docker pull kiota.ch/b19/python:py3.12
+docker pull kiota.ch/b19/python:py3.13
 ```
 
-Serie: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Serie: `py3.13` | `py3.14` | `py3.15`
 
 ## Uso
 
@@ -76,16 +74,16 @@ Construye sobre esta imagen:
 ### Desde GHCR
 
 ```dockerfile
-FROM ghcr.io/damian-buho/b19/python:py3.12
+FROM ghcr.io/damian-buho/b19/python:py3.13
 ```
 
 ### Desde DockerHub
 
 ```dockerfile
-FROM damianbuho/b19-python:py3.12
+FROM damianbuho/b19-python:py3.13
 ```
 
-Serie: `py3.12` | `py3.13` | `py3.14` | `py3.15`
+Serie: `py3.13` | `py3.14` | `py3.15`
 
 Para el patrón multietapa recomendado y el sistema de hooks de compilación (build.d), genera un derivado con `b19/scripts/scaffold.sh` de [m6e/b19](https://kiota.ch/m6e/b19).
 
