@@ -119,3 +119,8 @@ repositories:
     url: ssh://git@kiota.ch/b19/python.git
 technologies:
   - python
+upstream:
+  - authors: The Python Software Foundation and contributors
+    license: PSF-2.0
+    name: CPython
+    url: https://www.python.org

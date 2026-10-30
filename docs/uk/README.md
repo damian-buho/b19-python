@@ -126,8 +126,13 @@ make container-build
 
 - [Специфікація Projectfile](https://projectfile.org)
 
+## Першоджерело
+
+Цей проєкт пакує [CPython](https://www.python.org) (`PSF-2.0`).
+Дякуємо: The Python Software Foundation and contributors
+
 ## Ліцензія
 
-Цей проєкт ліцензовано на умовах MIT — див. файл [LICENSE](LICENSE) для подробиць.
+Пакування в цьому репозиторії ліцензовано на умовах MIT — див. файл [LICENSE](LICENSE) для подробиць.
 
 <!-- textlint-enable -->

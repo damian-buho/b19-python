@@ -126,8 +126,13 @@ Puntos de entrada de la canalización:
 
 - [Especificación de Projectfile](https://projectfile.org)
 
+## Proyecto original
+
+Este proyecto empaqueta [CPython](https://www.python.org) (`PSF-2.0`).
+Gracias a: The Python Software Foundation and contributors
+
 ## Licencia
 
-Este proyecto se publica bajo la licencia MIT — consulta el archivo [LICENSE](LICENSE) para más detalles.
+El empaquetado de este repositorio se publica bajo la licencia MIT — consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 <!-- textlint-enable -->

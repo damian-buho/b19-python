@@ -124,6 +124,11 @@ Pipeline entry points:
 
 - [Projectfile Specification](https://projectfile.org)
 
+## Upstream
+
+This project packages [CPython](https://www.python.org) (`PSF-2.0`).
+Thanks to: The Python Software Foundation and contributors
+
 ## License
 
-This project is licensed under MIT — see the [LICENSE](LICENSE) file for details.
+The packaging in this repository is licensed under MIT — see the [LICENSE](LICENSE) file for details.
