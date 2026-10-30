@@ -18,6 +18,11 @@ CPython compiled from source with pre-activated venv and uv-first defaults — a
 
 [![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
 
+## Upstream
+
+This project packages [CPython](https://www.python.org) (`PSF-2.0`).
+Thanks to: Python Software Foundation
+
 ## Features
 
 - One certificate trust store for every Python TLS client
@@ -123,11 +128,6 @@ Pipeline entry points:
 ## Links
 
 - [Projectfile Specification](https://projectfile.org)
-
-## Upstream
-
-This project packages [CPython](https://www.python.org) (`PSF-2.0`).
-Thanks to: The Python Software Foundation and contributors
 
 ## License
 

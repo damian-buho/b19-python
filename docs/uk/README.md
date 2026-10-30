@@ -20,6 +20,11 @@ CPython із джерел з попередньо активованим venv і
 
 [![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
 
+## Першоджерело
+
+Цей проєкт пакує [CPython](https://www.python.org) (`PSF-2.0`).
+Дякуємо: Python Software Foundation
+
 ## Можливості
 
 - Одне сховище довіри для всіх TLS-клієнтів Python
@@ -125,11 +130,6 @@ make container-build
 ## Посилання
 
 - [Специфікація Projectfile](https://projectfile.org)
-
-## Першоджерело
-
-Цей проєкт пакує [CPython](https://www.python.org) (`PSF-2.0`).
-Дякуємо: The Python Software Foundation and contributors
 
 ## Ліцензія
 

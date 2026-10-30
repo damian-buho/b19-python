@@ -120,7 +120,7 @@ repositories:
 technologies:
   - python
 upstream:
-  - authors: The Python Software Foundation and contributors
+  - authors: Python Software Foundation
     license: PSF-2.0
     name: CPython
     url: https://www.python.org

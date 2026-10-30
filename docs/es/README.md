@@ -20,6 +20,11 @@ CPython compilado desde fuente con venv preactivado y valores uv-first — sincr
 
 [![Publish pipeline on kiota.ch](https://kiota.ch/b19/python/badges/workflows/published.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Vulnerability audit on kiota.ch](https://kiota.ch/b19/python/badges/workflows/audited.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Dependency freshness on kiota.ch](https://kiota.ch/b19/python/badges/workflows/check-outdated.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions) [![Analysis sweep on kiota.ch](https://kiota.ch/b19/python/badges/workflows/analyzed.yaml/badge.svg?style=flat-square)](https://kiota.ch/b19/python/actions)
 
+## Proyecto original
+
+Este proyecto empaqueta [CPython](https://www.python.org) (`PSF-2.0`).
+Gracias a: Python Software Foundation
+
 ## Características
 
 - Un solo almacén de confianza para todos los clientes TLS de Python
@@ -125,11 +130,6 @@ Puntos de entrada de la canalización:
 ## Enlaces
 
 - [Especificación de Projectfile](https://projectfile.org)
-
-## Proyecto original
-
-Este proyecto empaqueta [CPython](https://www.python.org) (`PSF-2.0`).
-Gracias a: The Python Software Foundation and contributors
 
 ## Licencia
 
