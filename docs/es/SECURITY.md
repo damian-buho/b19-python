@@ -63,4 +63,17 @@ gpg --encrypt --armor --recipient B64C122EE16C3746 message.txt
 B19 / Python no ofrece actualmente un programa de recompensas. Aun así
 agradecemos los informes divulgados de forma responsable — consulta el canal de
 contacto anterior.
+
+## Vulnerabilidades reconocidas
+
+Los siguientes hallazgos fueron revisados y se suprimen de forma intencionada
+(la corrección depende de una versión posterior del proyecto base o el aviso no
+aplica a este proyecto):
+
+| ID | Motivo |
+| --- | --- |
+| [CVE-2026-11940](https://nvd.nist.gov/vuln/detail/CVE-2026-11940) | blocked by upstream |
+| [CVE-2026-11972](https://nvd.nist.gov/vuln/detail/CVE-2026-11972) | blocked by upstream |
+| [CVE-2026-119170](https://nvd.nist.gov/vuln/detail/CVE-2026-119170) | blocked by upstream |
+
 <!-- textlint-enable -->

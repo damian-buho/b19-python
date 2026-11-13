@@ -62,4 +62,16 @@ gpg --encrypt --armor --recipient B64C122EE16C3746 message.txt
 
 B19 / Python наразі не має програми винагород за вразливості. Проте ми цінуємо
 відповідальні повідомлення — див. канал контакту вище.
+
+## Визнані вразливості
+
+Наведені знахідки переглянуто та навмисно придушено (виправлення залежить від
+наступного випуску upstream-проєкту, або повідомлення не стосується цього проєкту):
+
+| ID | Причина |
+| --- | --- |
+| [CVE-2026-11940](https://nvd.nist.gov/vuln/detail/CVE-2026-11940) | blocked by upstream |
+| [CVE-2026-11972](https://nvd.nist.gov/vuln/detail/CVE-2026-11972) | blocked by upstream |
+| [CVE-2026-119170](https://nvd.nist.gov/vuln/detail/CVE-2026-119170) | blocked by upstream |
+
 <!-- textlint-enable -->
