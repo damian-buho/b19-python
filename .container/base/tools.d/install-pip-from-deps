@@ -4,6 +4,8 @@
 #
 # SPDX-License-Identifier: MIT
 
+  set -e
+
   # shellcheck source=/dev/null
   . b19-i18n
 
