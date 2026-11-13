@@ -31,5 +31,5 @@ keywords:
   - uv
   - venv
   - pip
-version: 0.11.8
-date-released: "2026-11-08"
+version: 0.11.9
+date-released: "2026-11-13"
